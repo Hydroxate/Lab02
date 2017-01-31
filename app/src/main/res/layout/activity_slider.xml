@@ -31,7 +31,7 @@
         android:id="@+id/freqSlider"
         android:layout_below="@+id/onOffSwitch"
         android:max="1024"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true" /> <!-- android:max specifies the max value of the slider !-->
 
     <TextView
         android:layout_width="wrap_content"

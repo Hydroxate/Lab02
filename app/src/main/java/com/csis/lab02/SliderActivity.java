@@ -12,13 +12,17 @@ public class SliderActivity extends Activity {
     private SeekBar freqSlider;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
 
+
+        //THIS SECTION FOR PART 2
         freqSlider = (SeekBar) findViewById(R.id.freqSlider);
 
         freqSlider.setOnSeekBarChangeListener(
-            new SeekBar.OnSeekBarChangeListener() {
+            new SeekBar.OnSeekBarChangeListener()
+            {
                 float frequency = 0;
                 @Override
                 public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
@@ -38,6 +42,9 @@ public class SliderActivity extends Activity {
                 }
 
             });
+
+        //END OF SECTION FOR PART 2
+
         }
     }
 
