@@ -57,6 +57,10 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 float val = (isChecked) ?  1.0f : 0.0f; // value = (get value of isChecked, if true val = 1.0f, if false val = 0.0f)
                 sendFloatPD("onOff", val); //send value to patch, receiveEvent names onOff
+
+                //<------Turn on Volume-------------->
+                //This will need its own listener if you provide xml widget to control
+                sendFloatPD("amp",1.0f);
             }
         });
 
